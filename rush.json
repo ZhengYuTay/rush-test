@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.47.0",
+  "pnpmVersion": "6.3.0",
+  "pnpmOptions": {
+    "pnpmStore": "local",
+    "strictPeerDependencies": true,
+    "resolutionStrategy": "fast"
+  },
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 2,
+  "allowMostlyStandardPackageNames": true,
+  "ensureConsistentVersions": true,
+  "gitPolicy": {
+    "versionBumpCommitMessage": "Applying package updates. [skip-ci]",
+    "changeLogUpdateCommitMessage": "Deleting change files and updating change logs for package updates. [skip-ci]"
+  },
+  "repository": {
+    "url": "https://github.com/ZhengYuTay/rush-test",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "telemetryEnabled": false,
+  "projects": [
+    {
+      "packageName": "test",
+      "projectFolder": "packages/test",
+      "shouldPublish": false
+    }
+  ]
+}
