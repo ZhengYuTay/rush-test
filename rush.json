@@ -30,8 +30,13 @@
   "telemetryEnabled": false,
   "projects": [
     {
-      "packageName": "test",
-      "projectFolder": "packages/test",
+      "packageName": "@shared/components",
+      "projectFolder": "libs/components",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "homepage",
+      "projectFolder": "apps/homepage",
       "shouldPublish": false
     }
   ]
