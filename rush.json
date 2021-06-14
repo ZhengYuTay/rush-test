@@ -4,7 +4,7 @@
   "pnpmVersion": "6.3.0",
   "pnpmOptions": {
     "pnpmStore": "local",
-    "strictPeerDependencies": true,
+    "strictPeerDependencies": false,
     "resolutionStrategy": "fast"
   },
   "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
@@ -37,6 +37,11 @@
     {
       "packageName": "homepage",
       "projectFolder": "apps/homepage",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@shared/chakra-ui",
+      "projectFolder": "libs/chakra-ui",
       "shouldPublish": false
     }
   ]
